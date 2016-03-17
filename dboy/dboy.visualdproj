@@ -817,10 +817,12 @@
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
  <Folder name="dboy">
+  <Folder name="gameboy">
+   <File path="gameboy\gameboy.d" />
+  </Folder>
   <Folder name="semver">
    <File path="semver\semver.d" />
   </Folder>
-  <File path="dboy.gb\gameboy.d" />
   <File path="main.d" />
  </Folder>
 </DProject>

@@ -1,4 +1,3 @@
-module gameboy;
 import std.stdio;
 import std.exception;
 
