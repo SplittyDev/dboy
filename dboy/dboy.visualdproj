@@ -1,6 +1,6 @@
 <DProject>
  <ProjectGuid>{2AC421D7-485E-4969-A26C-0F4B14A9ACAB}</ProjectGuid>
- <Config name="Debug DMD" platform="Win32">
+ <Config name="Debug_DMD" platform="Win32">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -44,7 +44,7 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <allinst>0</allinst>
   <stackStomp>0</stackStomp>
@@ -55,7 +55,7 @@
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
   <imppath />
   <fileImppath />
-  <outdir>$(ConfigurationName) $(PlatformName)</outdir>
+  <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
   <objname />
   <libname />
@@ -102,7 +102,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Release DMD" platform="Win32">
+ <Config name="Release_DMD" platform="Win32">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -146,7 +146,7 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <allinst>0</allinst>
   <stackStomp>0</stackStomp>
@@ -157,7 +157,7 @@
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
   <imppath />
   <fileImppath />
-  <outdir>$(ConfigurationName) $(PlatformName)</outdir>
+  <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
   <objname />
   <libname />
@@ -204,7 +204,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Debug DMD" platform="x64">
+ <Config name="Debug_DMD" platform="x64">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -306,7 +306,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Release DMD" platform="x64">
+ <Config name="Release_DMD" platform="x64">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -408,7 +408,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Debug GDC" platform="Win32">
+ <Config name="Debug_GDC" platform="Win32">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -452,7 +452,7 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <allinst>0</allinst>
   <stackStomp>0</stackStomp>
@@ -463,7 +463,7 @@
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
   <imppath />
   <fileImppath />
-  <outdir>$(ConfigurationName) $(PlatformName)</outdir>
+  <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
   <objname />
   <libname />
@@ -510,7 +510,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Release GDC" platform="Win32">
+ <Config name="Release_GDC" platform="Win32">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -554,7 +554,7 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <allinst>0</allinst>
   <stackStomp>0</stackStomp>
@@ -565,7 +565,7 @@
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
   <imppath />
   <fileImppath />
-  <outdir>$(ConfigurationName) $(PlatformName)</outdir>
+  <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
   <objname />
   <libname />
@@ -612,7 +612,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Debug GDC" platform="x64">
+ <Config name="Debug_GDC" platform="x64">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
@@ -714,7 +714,7 @@
   <postBuildCommand />
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
- <Config name="Release GDC" platform="x64">
+ <Config name="Release_GDC" platform="x64">
   <obj>0</obj>
   <link>0</link>
   <lib>0</lib>
