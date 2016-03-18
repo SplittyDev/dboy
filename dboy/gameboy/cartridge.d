@@ -61,9 +61,9 @@ class Cartridge {
         return true;
     }
 
-    static CartHeader ParseHeader (ubyte[] data) {
+    static ref CartHeader ParseHeader (ubyte[] data) {
         auto ptr = data.ptr + 256;
         auto headerPtr = cast (CartHeader *) ptr;
-        return *(headerPtr);
+        return *headerPtr;
     }
 }
