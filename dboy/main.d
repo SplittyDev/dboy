@@ -2,7 +2,7 @@ import std.stdio;
 
 import semver;
 import gameboy;
-import sdl2;
+import sdl2.sdl;
 
 int main(string[] argv) {
 

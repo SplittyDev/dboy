@@ -821,7 +821,15 @@
    <File path="gameboy\gameboy.d" />
   </Folder>
   <Folder name="sdl2">
+   <File path="sdl2\blendmode.d" />
+   <File path="sdl2\main.d" />
+   <File path="sdl2\pixels.d" />
+   <File path="sdl2\rect.d" />
+   <File path="sdl2\rwops.d" />
    <File path="sdl2\sdl2.d" />
+   <File path="sdl2\stdinc.d" />
+   <File path="sdl2\surface.d" />
+   <File path="sdl2\video.d" />
   </Folder>
   <Folder name="semver">
    <File path="semver\semver.d" />
