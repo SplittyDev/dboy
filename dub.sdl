@@ -1,0 +1,8 @@
+name "dboy"
+description "A minimal D application."
+copyright "Copyright © 2016, Splitty"
+authors "Splitty"
+platforms "windows"
+buildType "debug"
+sourcePaths "dboy"
+libs "SDL2"

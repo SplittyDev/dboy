@@ -53,7 +53,7 @@
   <cccmd>$(CC) -c</cccmd>
   <ccTransOpt>1</ccTransOpt>
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
-  <imppath />
+  <imppath>..\include\SDL2</imppath>
   <fileImppath />
   <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
@@ -75,7 +75,7 @@
   <versionids />
   <dump_source>0</dump_source>
   <mapverbosity>0</mapverbosity>
-  <createImplib>0</createImplib>
+  <createImplib>1</createImplib>
   <defaultlibname />
   <debuglibname />
   <moduleDepsFile />
@@ -89,8 +89,8 @@
   <cv2pdbOptions />
   <objfiles />
   <linkswitches />
-  <libfiles />
-  <libpaths />
+  <libfiles>SDL2.lib</libfiles>
+  <libpaths>..\lib</libpaths>
   <deffile />
   <resfile />
   <exefile>$(OutDir)\$(ProjectName).exe</exefile>
@@ -457,11 +457,11 @@
   <allinst>0</allinst>
   <stackStomp>0</stackStomp>
   <compiler>1</compiler>
-  <otherDMD>0</otherDMD>
+  <otherDMD>1</otherDMD>
   <cccmd>$(CC) -c</cccmd>
   <ccTransOpt>1</ccTransOpt>
-  <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
-  <imppath />
+  <program>C:\Users\Splitty\Downloads\gdc-5.2.0-arm-linux-gnueabi+2.066.1\arm-unknown-linux-gnueabi\bin\gdc.exe</program>
+  <imppath>..\include\SDL2</imppath>
   <fileImppath />
   <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
@@ -497,7 +497,7 @@
   <cv2pdbOptions />
   <objfiles />
   <linkswitches />
-  <libfiles />
+  <libfiles>SDL2.lib</libfiles>
   <libpaths />
   <deffile />
   <resfile />
@@ -819,6 +819,9 @@
  <Folder name="dboy">
   <Folder name="gameboy">
    <File path="gameboy\gameboy.d" />
+  </Folder>
+  <Folder name="sdl2">
+   <File path="sdl2\sdl2.d" />
   </Folder>
   <Folder name="semver">
    <File path="semver\semver.d" />

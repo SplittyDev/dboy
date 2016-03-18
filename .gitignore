@@ -1,6 +1,7 @@
 # D
 Debug_*/
 Release_*/
+.dub/
 
 # ROMs
 *.gb

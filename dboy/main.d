@@ -2,6 +2,7 @@ import std.stdio;
 
 import semver;
 import gameboy;
+import sdl2;
 
 int main(string[] argv) {
 
@@ -24,6 +25,10 @@ int main(string[] argv) {
     // Read cartridge header
     auto header = read_cart_header (cart);
     writefln ("Title: %s", header.title);
+
+    // Initialize SDL2
+    SDL_Init (SDL_INIT_EVERYTHING);
+
     return 0;
 }
 
