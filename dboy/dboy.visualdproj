@@ -818,7 +818,8 @@
  </Config>
  <Folder name="dboy">
   <Folder name="gameboy">
-   <File path="gameboy\gameboy.d" />
+   <File path="gameboy\cartridge.d" />
+   <File path="gameboy\window.d" />
   </Folder>
   <Folder name="sdl2">
    <File path="sdl2\blendmode.d" />

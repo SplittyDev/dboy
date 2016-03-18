@@ -1,8 +1,8 @@
 import std.stdio;
 
 import semver;
-import gameboy;
-import sdl2.sdl;
+import gameboy.cartridge;
+import gameboy.window;
 
 int main(string[] argv) {
 
@@ -16,18 +16,11 @@ int main(string[] argv) {
     }
 
     // Read cartridge
-    ubyte cart [0x3FFF];
-    if (!read_cart (argv [1], cart)) {
-        writefln ("Exiting.");
-        return 0;
-    }
+    auto cartridge = new Cartridge (argv [1]);
+    writefln ("Title: %s", cartridge.Header.title);
 
-    // Read cartridge header
-    auto header = read_cart_header (cart);
-    writefln ("Title: %s", header.title);
-
-    // Initialize SDL2
-    SDL_Init (SDL_INIT_EVERYTHING);
+    // Create window
+    // auto window = new Window ();
 
     return 0;
 }
