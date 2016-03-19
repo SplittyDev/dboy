@@ -1,5 +1,6 @@
 module gameboy.cartridge;
 import std.stdio;
+import std.container;
 import std.exception;
 
 /// Cartridge Header

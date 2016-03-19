@@ -817,6 +817,9 @@
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
  <Folder name="dboy">
+  <Folder name="extratypes">
+   <File path="map.d" />
+  </Folder>
   <Folder name="gameboy">
    <File path="gameboy\cartridge.d" />
    <File path="gameboy\cpu.d" />
