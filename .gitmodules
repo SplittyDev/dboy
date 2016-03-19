@@ -1,0 +1,3 @@
+[submodule "dboy-dependencies"]
+	path = dboy-dependencies
+	url = https://github.com/SplittyDev/dboy-dependencies
