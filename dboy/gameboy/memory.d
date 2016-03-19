@@ -1,7 +1,6 @@
 module gameboy.memory;
 import core.stdc.stdlib;
 import core.memory : GC;
-import std.algorithm.searching : find;
 
 alias Address = ushort;
 alias MMIOReadCallback = ubyte function ();
