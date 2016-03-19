@@ -5,3 +5,7 @@ import std.string;
 SDL_Window *DSDL_CreateWindow (string filename, int x, int y, int width, int height, uint flags) {
     return SDL_CreateWindow (toStringz (filename), x, y, width, height, flags);
 }
+
+void DSDL_SetWindowTitle (SDL_Window *window, string title) {
+    SDL_SetWindowTitle (window, toStringz (title));
+}

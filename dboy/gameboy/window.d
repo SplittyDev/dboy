@@ -2,6 +2,9 @@ module gameboy.window;
 import sdl2.sdl;
 import sdl2.extra;
 
+alias UpdateCallback = void function ();
+alias RenderCallback = void function (SDL_Renderer *);
+
 class Window {
 
     SDL_Window *window;
@@ -18,12 +21,44 @@ class Window {
         SDL_RenderSetLogicalSize (renderer, width, height);
     }
 
-    void Update (void function () callback) {
+    void SetTitle (string title) {
+         DSDL_SetWindowTitle (window, title);
+    }
+
+    void Run (UpdateCallback updateCallback, RenderCallback renderCallback) {
+        while (!closeRequested) {
+            Update (updateCallback);
+            Render (renderCallback);
+        }
+    }
+
+    void Update (UpdateCallback callback) {
         SDL_Event e;
         while (SDL_PollEvent (&e)) {
             if (e.type == SDL_EventType.SDL_QUIT)
                 closeRequested = true;
         }
         callback ();
+    }
+
+    void Render (RenderCallback callback) {
+        Clear ();
+        callback (renderer);
+        Present ();
+    }
+
+    ~this () {
+        SDL_DestroyRenderer (renderer);
+        SDL_DestroyWindow (window);
+        SDL_Quit ();
+    }
+
+    pragma (inline, true) private:
+    void Clear () {
+        SDL_RenderClear (renderer);
+    }
+
+    void Present () {
+        SDL_RenderPresent (renderer);
     }
 }

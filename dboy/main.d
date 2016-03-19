@@ -1,8 +1,10 @@
 import std.stdio;
+import std.string;
 
 import semver;
 import gameboy.cartridge;
 import gameboy.window;
+import sdl2.render;
 
 int main(string[] argv) {
 
@@ -19,8 +21,18 @@ int main(string[] argv) {
     auto cartridge = new Cartridge (argv [1]);
     writefln ("Title: %s", cartridge.header.title);
 
+    // Callbacks
+    auto update = function {
+    };
+
+    auto render = function (SDL_Renderer *renderer) {
+    };
+
     // Create window
     auto window = new Window ("DBoy");
+    window.SetSize (160, 144);
+    window.SetTitle (format ("[DBoy] %s", cartridge.header.title));
+    window.Run (update, render);
 
     return 0;
 }
