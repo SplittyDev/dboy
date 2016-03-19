@@ -31,8 +31,26 @@ class Gameboy {
         this ();
     }
 
+    /// Creates a new instance of the Gameboy class.
+    /// Loads an existing cartridge instance.
+    this (Cartridge cart) {
+        this.cart = cart;
+        this ();
+    }
+
+    /// Run a single cpu cycle
+    void RunCycle () {
+        // TODO: Implement
+    }
+
     /// Initialize CPU
     void InitCPU () {
+        cpu.regs.AF.r   = 0x01B0;
+        cpu.regs.BC.r   = 0x0013;
+        cpu.regs.DE.r   = 0x00D8;
+        cpu.regs.HL.r   = 0x014D;
+        cpu.regs.SP     = 0xFFFE;
+        cpu.regs.PC     = 0x0100;
     }
 
     /// Initialize memory

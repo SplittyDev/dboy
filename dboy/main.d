@@ -4,7 +4,10 @@ import std.string;
 import semver;
 import gameboy.cartridge;
 import gameboy.window;
+import gameboy.gameboy;
 import sdl2.render;
+
+Gameboy emulator;
 
 int main(string[] argv) {
 
@@ -21,11 +24,15 @@ int main(string[] argv) {
     auto cartridge = new Cartridge (argv [1]);
     writefln ("Title: %s", cartridge.header.title);
 
+    // Create emulator
+    emulator = new Gameboy (cartridge);
+
     // Callbacks
-    auto update = function {
+    UpdateCallback update = function {
+        emulator.RunCycle ();
     };
 
-    auto render = function (SDL_Renderer *renderer) {
+    RenderCallback render = function (SDL_Renderer *renderer) {
     };
 
     // Create window
