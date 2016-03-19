@@ -819,6 +819,9 @@
  <Folder name="dboy">
   <Folder name="gameboy">
    <File path="gameboy\cartridge.d" />
+   <File path="gameboy\cpu.d" />
+   <File path="gameboy\gameboy.d" />
+   <File path="gameboy\memory.d" />
    <File path="gameboy\window.d" />
   </Folder>
   <Folder name="sdl2">
