@@ -17,10 +17,10 @@ int main(string[] argv) {
 
     // Read cartridge
     auto cartridge = new Cartridge (argv [1]);
-    writefln ("Title: %s", cartridge.Header.title);
+    writefln ("Title: %s", cartridge.header.title);
 
     // Create window
-    // auto window = new Window ();
+    auto window = new Window ("DBoy");
 
     return 0;
 }

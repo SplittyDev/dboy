@@ -34,19 +34,19 @@ struct CartHeader {
 class Cartridge {
 
     /// Cartridge Header
-    CartHeader Header;
+    CartHeader header;
 
     /// Cartridge Data
-    ubyte[0x3FFF] Data;
+    ubyte[0x3FFF] data;
 
     this (ubyte[] data) {
-        Data = data;
-        Header = ParseHeader (Data);
+        this.data = data;
+        header = ParseHeader (this.data);
     }
 
     this (string filename) {
-        LoadDataFromFile (filename, Data);
-        Header = ParseHeader (Data);
+        LoadDataFromFile (filename, data);
+        header = ParseHeader (data);
     }
 
     static bool LoadDataFromFile (string filename, ubyte[] buffer) {
