@@ -53,7 +53,7 @@
   <cccmd>$(CC) -c</cccmd>
   <ccTransOpt>1</ccTransOpt>
   <program>$(DMDInstallDir)windows\bin\dmd.exe</program>
-  <imppath>..\include\SDL2</imppath>
+  <imppath>..\dboy-dependencies\include</imppath>
   <fileImppath />
   <outdir>..\$(ConfigurationName)_$(PlatformName)</outdir>
   <objdir>$(OutDir)</objdir>
@@ -90,7 +90,7 @@
   <objfiles />
   <linkswitches />
   <libfiles>SDL2.lib</libfiles>
-  <libpaths>..\lib</libpaths>
+  <libpaths>..\dboy-dependencies\lib</libpaths>
   <deffile />
   <resfile />
   <exefile>$(OutDir)\$(ProjectName).exe</exefile>
