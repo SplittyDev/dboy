@@ -1,10 +1,14 @@
 module sdl2.sdl;
 public import sdl2.stdinc;
+public import sdl2.error;
 public import sdl2.rwops;
 public import sdl2.rect;
 public import sdl2.pixels;
 public import sdl2.surface;
 public import sdl2.video;
+public import sdl2.render;
+public import sdl2.events;
+public import sdl2.quit;
 extern (C):
 
 enum SDL_INIT_TIMER             = 0x00000001;
